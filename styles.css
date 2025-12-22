@@ -1,0 +1,360 @@
+/* styles.css - For index.html */
+
+/* footer icon hover lift */
+footer a {
+  transition: transform .18s ease, color .18s ease;
+}
+footer a:hover {
+  transform: translateY(-3px);
+}
+
+/* adjust mobile menu z-index */
+#mobileMenu {
+  z-index: 60;
+}
+
+/* =========================
+   INDEX.HTML — MEDIA QUERIES
+   ========================= */
+
+/* Tablet / small laptops */
+@media (max-width: 768px) {
+  /* switch hero to single column */
+  main section {
+    grid-template-columns: 1fr !important;
+    gap: 2.25rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  /* reduce heading and paragraph size */
+  main h1 {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+  main p {
+    font-size: 1rem;
+  }
+
+  /* shrink illustration */
+  main img {
+    width: 56%;
+    max-width: 320px;
+  }
+
+  /* CTA adjustments */
+  main a.inline-block {
+    padding: 0.7rem 1.25rem;
+    font-size: 0.98rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  main section {
+    grid-template-columns: 1fr !important;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    gap: 1.5rem;
+  }
+
+  main h1 {
+    font-size: 1.6rem;
+    line-height: 1.12;
+    text-align: left;
+  }
+  main p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  /* place CTA full width on mobile and left-aligned */
+  main a.inline-block {
+    display: inline-block;
+    width: auto;
+    padding: 0.65rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  /* illustration smaller and centered */
+  main img {
+    width: 48%;
+    max-width: 220px;
+  }
+
+  /* ensure header nav items collapse properly (no change to header structure) */
+  nav .md\\:flex { display: none !important; }
+  nav button.md\\:hidden { display: inline-flex !important; }
+}
+
+
+
+
+
+
+/* styles.css - For signup.html */
+
+/* SIGNUP PAGE STYLING */
+.signup-section {
+  min-height: 80vh;
+  background: linear-gradient(to right, #dbeafe, #f8fafc);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.signup-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.signup-subtext {
+  color: #475569;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.signup-form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: solid 1px #cbd5e1;
+  transition: 0.25s;
+}
+
+.form-group input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.25);
+  outline: none;
+}
+
+.btn-signup {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  padding: 13px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn-signup:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+.signin-link {
+  margin-top: 18px;
+  color: #475569;
+  font-size: 0.92rem;
+}
+
+.signin-link a {
+  font-weight: 600;
+}
+
+/* =========================
+   SIGNUP PAGE - MEDIA QUERIES
+   ========================= */
+
+/* Tablets and medium screens */
+@media (max-width: 768px) {
+  .signup-title {
+    font-size: 2rem;
+  }
+
+  .signup-subtext {
+    font-size: 0.9rem;
+  }
+
+  .signup-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .form-group input {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .btn-signup {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .signup-title {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .signup-subtext {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-bottom: 24px;
+  }
+
+  .signup-section {
+    padding: 24px 12px;
+    background: white; /* cleaner on small screens */
+  }
+
+  .signup-form {
+    gap: 16px;
+  }
+
+  .form-group label {
+    font-size: 0.82rem;
+  }
+
+  .form-group input {
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+  }
+
+  .btn-signup {
+    padding: 11px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+  }
+
+  .signin-link {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+}
+
+
+
+
+/*=========================================
+THANK YOU PAGE STYLING
+=========================================*/
+
+/* Main hero height + spacing */
+.thank-hero {
+  min-height: 600px;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  align-items: center;
+  background: #f8fafc; /* light background */
+  color: #1e293b;
+}
+
+/* Wrapper spacing fix */
+.thank-hero .content-wrap {
+  gap: 3rem;
+}
+
+.success-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.12); /* blue, very soft */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.success-circle i {
+  color: #2563eb;   /* blue icon */
+  font-size: 3.2rem;
+}
+
+/* Primary CTA (blue) */
+.btn-primary {
+  padding: 0.9rem 2.4rem;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.25s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+  transform: translateY(-3px);
+}
+
+/* Secondary CTA (outline) */
+.btn-outline {
+  padding: 0.9rem 2.4rem;
+  border-radius: 10px;
+  border: 1px solid rgba(51, 65, 85, 0.2);
+  color: #1e293b;
+  transition: 0.25s ease;
+  display: inline-block;
+}
+
+.btn-outline:hover {
+  background: rgba(30, 41, 59, 0.06);
+  transform: translateY(-3px);
+}
+
+/* Counter text */
+.redirect-text {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .thank-hero {
+    min-height: 520px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+
+
+/* ============ Dashboard dark styles ============ */
+
+body { --dash-bg: #0b1220; }
+
+/* override btns for dashboard */
+.bg-slate-800 { background-color: #0f1724 !important; }
+.border-slate-700 { border-color: rgba(148,163,184,0.06) !important; }
+.text-slate-400 { color: rgba(148,163,184,0.9) !important; }
+
+.btn-primary {
+  padding: .65rem 1rem;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.btn-outline {
+  padding: .6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(148,163,184,0.06);
+  color: #cbd5e1;
+  background: transparent;
+}
+
+/* small responsive rules */
+@media (max-width: 768px) {
+  aside.w-72 { display:none; }
+  main { padding: 1.25rem; }
+}
