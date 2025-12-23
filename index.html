@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ElevateDev - Home</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="frontend/styles.css">
+
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col">
+
+  <!-- ===== HEADER ===== -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a class="text-2xl font-bold text-gray-800" href="#">ElevateDev</a>
+      <ul class="hidden md:flex gap-10 font-medium">
+        <li><a class="hover:text-blue-600" href="#about">About</a></li>
+        <li><a class="hover:text-blue-600" href="mailto:shreyagaikwad2k4@gmail.com">Mail us</a></li>
+      </ul>
+      <button class="md:hidden text-gray-800 text-2xl" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t py-3">
+      <a class="block px-6 py-2 hover:bg-gray-100" href="#about">About</a>
+      <a class="block px-6 py-2 hover:bg-gray-100" href="mailto:shreyagaikwad2k4@gmail.com">Mail us</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <main class="flex-grow">
+    <section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- Text Block -->
+      <div>
+        <h1 class="text-5xl font-extrabold text-gray-900 leading-tight">
+          Build. Grow. <span class="text-blue-600">Excel.</span>
+        </h1>
+
+        <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+          ElevateDev helps developers create portfolio-ready projects, 
+          boost skills and unlock better career opportunities.
+        </p>
+
+        <a href="frontend/signup.html"
+           class="inline-block mt-8 bg-blue-600 hover:bg-blue-700 
+                  text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-md 
+                  transition-transform hover:scale-105">
+          Get Started
+        </a>
+      </div>
+
+      <!-- Illustration Block -->
+      <div class="flex justify-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png"
+             alt="Developers"
+             class="w-80 drop-shadow-lg">
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-6 mt-auto">
+    <p class="text-sm">&copy; 2025 ElevateDev. All rights reserved.</p>
+
+    <div class="flex justify-center gap-5 mt-3">
+      <a href="https://www.linkedin.com/in/shreya-gaikwad-2k4" target="_blank" class="text-gray-300 text-xl hover:text-blue-500">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/ShreyaGaikwad2k4" target="_blank" class="text-gray-300 text-xl hover:text-blue-500">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="frontend/script.js"></script>
+
+</body>
+</html>
