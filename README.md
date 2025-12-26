@@ -53,25 +53,49 @@ Git & GitHub
 
 saas-landing/
 │
+
+
 ├── frontend/
+
 │   ├── signup.html
+
 │   ├── thankyou.html
+
 │   ├── dashboard.html
+
 │   ├── styles.css
+
 │   └── script.js
+
+
 │
 ├── index.html
 │
+
+
 ├── backend/
+
+
 │   ├── models/
+
 │   │   ├── Lead.js
+
 │   │   └── User.js
+
+
 │   ├── routes/
+
 │   │   └── userRoutes.js
+
+
 │   ├── server.js
+
 │   ├── package.json
+
 │   └── .env   (not committed)
 │
+
+
 └── README.md
 
 
